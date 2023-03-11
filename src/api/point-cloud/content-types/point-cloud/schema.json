@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "point_clouds",
+  "info": {
+    "singularName": "point-cloud",
+    "pluralName": "point-clouds",
+    "displayName": "Point cloud",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "folder": {
+      "type": "string",
+      "unique": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "point_clouds"
+    }
+  }
+}
