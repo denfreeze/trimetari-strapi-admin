@@ -24,17 +24,17 @@
         }
       }
     },
-    "user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "projects"
-    },
     "point_clouds": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::point-cloud.point-cloud",
       "mappedBy": "project"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "projects"
     }
   }
 }
