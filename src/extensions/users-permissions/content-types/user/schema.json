@@ -68,6 +68,12 @@
       "relation": "manyToMany",
       "target": "api::project.project",
       "mappedBy": "users"
+    },
+    "team": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::team.team",
+      "inversedBy": "users"
     }
   }
 }
