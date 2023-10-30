@@ -1,0 +1,19 @@
+{
+    "kind": "collectionType",
+    "collectionName": "license_keys",
+    "info": {
+      "singularName": "license-key",
+      "pluralName": "license-keys",
+      "displayName": "License key"
+    },
+    "options": {
+      "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+      "data": {
+        "type": "text"
+      }
+    }
+  }
+  
